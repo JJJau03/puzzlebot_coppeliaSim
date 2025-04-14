@@ -22,7 +22,9 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'puzzlebot_coppelia = coppelia_sim_ros2.puzzlebot_coppelia:main'
+            'puzzlebot_coppelia = coppelia_sim_ros2.puzzlebot_coppelia:main',
+            'puzzlebot_controller = coppelia_sim_ros2.puzzlebot_controller:main'
+         
         ],
     },
 )
