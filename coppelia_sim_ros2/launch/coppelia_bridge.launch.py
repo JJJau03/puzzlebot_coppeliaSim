@@ -7,13 +7,13 @@ def generate_launch_description():
         
         Node(
             package='coppelia_sim_ros2',
-            executable='puzzlebot_coppelia',
+            executable='puzzlebot_controller',
             name='coppelia_ros_bridge',
             output='screen'
         ),
         
         TimerAction(
-            period=5.0,
+            period=2.0,
             actions=[
                 Node(
                     package='rqt_image_view',
